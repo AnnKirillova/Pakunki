@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-6W-SFV">
-                                <rect key="frame" x="146.5" y="56" width="121" height="28"/>
+                                <rect key="frame" x="148" y="56" width="118" height="28"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-cP-SwW">
-                                <rect key="frame" x="82.5" y="150" width="249.5" height="26"/>
+                                <rect key="frame" x="79.5" y="150" width="255" height="26"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qad-nj-FC7">
                                 <rect key="frame" x="15" y="340" width="384" height="50"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" red="0.019607843137254902" green="0.54509803921568623" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4WX-He-vaW"/>
                                 </constraints>
@@ -68,14 +68,26 @@
                                     <constraint firstAttribute="height" constant="22" id="cMx-Ar-b8E"/>
                                     <constraint firstAttribute="width" constant="19.5" id="f08-bx-zgC"/>
                                 </constraints>
+                                <color key="tintColor" red="0.019607843137254902" green="0.54509803921568623" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="checkmark.square" catalog="system"/>
+                                <connections>
+                                    <action selector="checkButton:" destination="Cyh-ka-w7T" eventType="touchUpInside" id="IYP-ky-X89"/>
+                                </connections>
                             </button>
-                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="By clicking the “Verify Number” button, I accept the terms of the User Agreement and the Privacy Policy" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-hD-vdY">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-hD-vdY">
                                 <rect key="frame" x="50.5" y="402" width="348.5" height="450"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By clicking the “Verify Number” button, I accept the terms of the User Agreement and the Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZKi-eZ-P53"/>
@@ -111,7 +123,10 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="checkBtn" destination="SWu-i3-5bC" id="SGa-8t-5yg"/>
                         <outlet property="loginBtn" destination="qad-nj-FC7" id="jjd-lA-xWN"/>
+                        <outlet property="privacyPolicyTV" destination="g4X-hD-vdY" id="oDY-In-igp"/>
+                        <outlet property="textArea" destination="Gwf-nO-NCF" id="2ph-VU-CwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oih-29-VSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -129,12 +144,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
