@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cyh-ka-w7T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="xgn-Mx-G7g">
+            <objects>
+                <viewController id="Cyh-ka-w7T" customClass="LoginViewController" customModule="Pakunki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJt-b5-foj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-6W-SFV">
+                                <rect key="frame" x="146.5" y="56" width="121" height="28"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-cP-SwW">
+                                <rect key="frame" x="82.5" y="150" width="249.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to speed up the checkout process and save your order to your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-ki-1Gn">
+                                <rect key="frame" x="15" y="194" width="384" height="40"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+ 1 (800) 439 0206" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwf-nO-NCF">
+                                <rect key="frame" x="15" y="278" width="384" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CTr-eO-fx7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qad-nj-FC7">
+                                <rect key="frame" x="15" y="340" width="384" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4WX-He-vaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Phone number verification">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-i3-5bC">
+                                <rect key="frame" x="20" y="412" width="19.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="cMx-Ar-b8E"/>
+                                    <constraint firstAttribute="width" constant="19.5" id="f08-bx-zgC"/>
+                                </constraints>
+                                <state key="normal" image="checkmark.square" catalog="system"/>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="By clicking the “Verify Number” button, I accept the terms of the User Agreement and the Privacy Policy" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-hD-vdY">
+                                <rect key="frame" x="50.5" y="402" width="348.5" height="450"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZKi-eZ-P53"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZKi-eZ-P53" firstAttribute="trailing" secondItem="Gwf-nO-NCF" secondAttribute="trailing" constant="15" id="1Ft-re-rbv"/>
+                            <constraint firstItem="SWu-i3-5bC" firstAttribute="leading" secondItem="ZKi-eZ-P53" secondAttribute="leading" constant="20" id="3Pi-Cn-gq5"/>
+                            <constraint firstItem="ZKi-eZ-P53" firstAttribute="bottom" secondItem="g4X-hD-vdY" secondAttribute="bottom" constant="10" id="3sN-3j-6l8"/>
+                            <constraint firstItem="qad-nj-FC7" firstAttribute="top" secondItem="Gwf-nO-NCF" secondAttribute="bottom" constant="18" id="8KM-sF-RLn"/>
+                            <constraint firstItem="g4X-hD-vdY" firstAttribute="leading" secondItem="SWu-i3-5bC" secondAttribute="trailing" constant="11" id="Cb6-Ue-cgu"/>
+                            <constraint firstItem="qad-nj-FC7" firstAttribute="leading" secondItem="ZKi-eZ-P53" secondAttribute="leading" constant="15" id="EUc-Rz-wWr"/>
+                            <constraint firstItem="pbC-6W-SFV" firstAttribute="top" secondItem="DJt-b5-foj" secondAttribute="top" constant="56" id="GNt-LI-iTm"/>
+                            <constraint firstItem="pbC-6W-SFV" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="Lyu-Uq-wLi"/>
+                            <constraint firstItem="ZKi-eZ-P53" firstAttribute="trailing" secondItem="ov6-ki-1Gn" secondAttribute="trailing" constant="15" id="MHe-8k-4Um"/>
+                            <constraint firstItem="Gwf-nO-NCF" firstAttribute="leading" secondItem="ZKi-eZ-P53" secondAttribute="leading" constant="15" id="NHr-5w-8Yu"/>
+                            <constraint firstItem="FA4-cP-SwW" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="T96-n0-Jhe"/>
+                            <constraint firstItem="ov6-ki-1Gn" firstAttribute="leading" secondItem="DJt-b5-foj" secondAttribute="leading" constant="15" id="VhA-9i-Ywm"/>
+                            <constraint firstItem="FA4-cP-SwW" firstAttribute="top" secondItem="pbC-6W-SFV" secondAttribute="bottom" constant="66" id="Wz4-OY-cuB"/>
+                            <constraint firstItem="ov6-ki-1Gn" firstAttribute="top" secondItem="FA4-cP-SwW" secondAttribute="bottom" constant="18" id="bCc-TM-9Kb"/>
+                            <constraint firstItem="Gwf-nO-NCF" firstAttribute="top" secondItem="ov6-ki-1Gn" secondAttribute="bottom" constant="44" id="d5O-cd-lGc"/>
+                            <constraint firstItem="ZKi-eZ-P53" firstAttribute="trailing" secondItem="g4X-hD-vdY" secondAttribute="trailing" constant="15" id="dxv-PO-9BV"/>
+                            <constraint firstItem="FA4-cP-SwW" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="gOi-Nb-QKf"/>
+                            <constraint firstItem="ZKi-eZ-P53" firstAttribute="trailing" secondItem="qad-nj-FC7" secondAttribute="trailing" constant="15" id="hkp-iq-OaC"/>
+                            <constraint firstItem="g4X-hD-vdY" firstAttribute="top" secondItem="qad-nj-FC7" secondAttribute="bottom" constant="12" id="j0W-Ep-HHz"/>
+                            <constraint firstItem="ov6-ki-1Gn" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="kpP-AF-b1s"/>
+                            <constraint firstItem="ov6-ki-1Gn" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="nKj-p2-sBR"/>
+                            <constraint firstItem="SWu-i3-5bC" firstAttribute="top" secondItem="qad-nj-FC7" secondAttribute="bottom" constant="22" id="nUM-4k-ijG"/>
+                            <constraint firstItem="FA4-cP-SwW" firstAttribute="centerX" secondItem="DJt-b5-foj" secondAttribute="centerX" id="na5-og-gOz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7Gy-Ld-4Xk" appends="YES" id="t2m-u2-tfT"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="qad-nj-FC7" id="jjd-lA-xWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oih-29-VSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7Gy-Ld-4Xk">
+                    <connections>
+                        <action selector="tapOnController:" destination="Cyh-ka-w7T" id="uMz-XX-2gc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="746.37681159420299" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

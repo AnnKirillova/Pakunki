@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C2F2631BB8C00B453F8 /* AppDelegate.swift */; };
+		95312C322631BB8C00B453F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C312631BB8C00B453F8 /* SceneDelegate.swift */; };
+		95312C372631BB8C00B453F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95312C352631BB8C00B453F8 /* Main.storyboard */; };
+		95312C392631BB9000B453F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95312C382631BB9000B453F8 /* Assets.xcassets */; };
+		95312C3C2631BB9000B453F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */; };
+		95312C522631DC6200B453F8 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C452631DC6100B453F8 /* Roboto-Italic.ttf */; };
+		95312C532631DC6200B453F8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95312C462631DC6100B453F8 /* LICENSE.txt */; };
+		95312C542631DC6200B453F8 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C472631DC6100B453F8 /* Roboto-Light.ttf */; };
+		95312C552631DC6200B453F8 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C482631DC6100B453F8 /* Roboto-LightItalic.ttf */; };
+		95312C562631DC6200B453F8 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C492631DC6100B453F8 /* Roboto-BoldItalic.ttf */; };
+		95312C572631DC6200B453F8 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4A2631DC6100B453F8 /* Roboto-Black.ttf */; };
+		95312C582631DC6200B453F8 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4B2631DC6100B453F8 /* Roboto-MediumItalic.ttf */; };
+		95312C592631DC6200B453F8 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4C2631DC6200B453F8 /* Roboto-Thin.ttf */; };
+		95312C5A2631DC6200B453F8 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4D2631DC6200B453F8 /* Roboto-BlackItalic.ttf */; };
+		95312C5B2631DC6200B453F8 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4E2631DC6200B453F8 /* Roboto-ThinItalic.ttf */; };
+		95312C5C2631DC6200B453F8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C4F2631DC6200B453F8 /* Roboto-Bold.ttf */; };
+		95312C5D2631DC6200B453F8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C502631DC6200B453F8 /* Roboto-Medium.ttf */; };
+		95312C5E2631DC6200B453F8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C512631DC6200B453F8 /* Roboto-Regular.ttf */; };
+		95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C612631E6F600B453F8 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95312C2C2631BB8C00B453F8 /* Pakunki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pakunki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95312C2F2631BB8C00B453F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95312C312631BB8C00B453F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95312C362631BB8C00B453F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95312C382631BB9000B453F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95312C3B2631BB9000B453F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95312C3D2631BB9000B453F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95312C452631DC6100B453F8 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		95312C462631DC6100B453F8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		95312C472631DC6100B453F8 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		95312C482631DC6100B453F8 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		95312C492631DC6100B453F8 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		95312C4A2631DC6100B453F8 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		95312C4B2631DC6100B453F8 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		95312C4C2631DC6200B453F8 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		95312C4D2631DC6200B453F8 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		95312C4E2631DC6200B453F8 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		95312C4F2631DC6200B453F8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		95312C502631DC6200B453F8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		95312C512631DC6200B453F8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		95312C612631E6F600B453F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95312C292631BB8C00B453F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95312C232631BB8C00B453F8 = {
+			isa = PBXGroup;
+			children = (
+				95312C2E2631BB8C00B453F8 /* Pakunki */,
+				95312C2D2631BB8C00B453F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95312C2D2631BB8C00B453F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95312C2C2631BB8C00B453F8 /* Pakunki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95312C2E2631BB8C00B453F8 /* Pakunki */ = {
+			isa = PBXGroup;
+			children = (
+				95312C442631DC3300B453F8 /* Roboto */,
+				95312C2F2631BB8C00B453F8 /* AppDelegate.swift */,
+				95312C312631BB8C00B453F8 /* SceneDelegate.swift */,
+				95312C352631BB8C00B453F8 /* Main.storyboard */,
+				95312C612631E6F600B453F8 /* LoginViewController.swift */,
+				95312C382631BB9000B453F8 /* Assets.xcassets */,
+				95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */,
+				95312C3D2631BB9000B453F8 /* Info.plist */,
+			);
+			path = Pakunki;
+			sourceTree = "<group>";
+		};
+		95312C442631DC3300B453F8 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				95312C462631DC6100B453F8 /* LICENSE.txt */,
+				95312C4A2631DC6100B453F8 /* Roboto-Black.ttf */,
+				95312C4D2631DC6200B453F8 /* Roboto-BlackItalic.ttf */,
+				95312C4F2631DC6200B453F8 /* Roboto-Bold.ttf */,
+				95312C492631DC6100B453F8 /* Roboto-BoldItalic.ttf */,
+				95312C452631DC6100B453F8 /* Roboto-Italic.ttf */,
+				95312C472631DC6100B453F8 /* Roboto-Light.ttf */,
+				95312C482631DC6100B453F8 /* Roboto-LightItalic.ttf */,
+				95312C502631DC6200B453F8 /* Roboto-Medium.ttf */,
+				95312C4B2631DC6100B453F8 /* Roboto-MediumItalic.ttf */,
+				95312C512631DC6200B453F8 /* Roboto-Regular.ttf */,
+				95312C4C2631DC6200B453F8 /* Roboto-Thin.ttf */,
+				95312C4E2631DC6200B453F8 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95312C2B2631BB8C00B453F8 /* Pakunki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95312C402631BB9000B453F8 /* Build configuration list for PBXNativeTarget "Pakunki" */;
+			buildPhases = (
+				95312C282631BB8C00B453F8 /* Sources */,
+				95312C292631BB8C00B453F8 /* Frameworks */,
+				95312C2A2631BB8C00B453F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pakunki;
+			productName = Pakunki;
+			productReference = 95312C2C2631BB8C00B453F8 /* Pakunki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95312C242631BB8C00B453F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					95312C2B2631BB8C00B453F8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 95312C272631BB8C00B453F8 /* Build configuration list for PBXProject "Pakunki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95312C232631BB8C00B453F8;
+			productRefGroup = 95312C2D2631BB8C00B453F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95312C2B2631BB8C00B453F8 /* Pakunki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95312C2A2631BB8C00B453F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95312C5C2631DC6200B453F8 /* Roboto-Bold.ttf in Resources */,
+				95312C3C2631BB9000B453F8 /* LaunchScreen.storyboard in Resources */,
+				95312C5E2631DC6200B453F8 /* Roboto-Regular.ttf in Resources */,
+				95312C522631DC6200B453F8 /* Roboto-Italic.ttf in Resources */,
+				95312C562631DC6200B453F8 /* Roboto-BoldItalic.ttf in Resources */,
+				95312C552631DC6200B453F8 /* Roboto-LightItalic.ttf in Resources */,
+				95312C5D2631DC6200B453F8 /* Roboto-Medium.ttf in Resources */,
+				95312C592631DC6200B453F8 /* Roboto-Thin.ttf in Resources */,
+				95312C542631DC6200B453F8 /* Roboto-Light.ttf in Resources */,
+				95312C572631DC6200B453F8 /* Roboto-Black.ttf in Resources */,
+				95312C5A2631DC6200B453F8 /* Roboto-BlackItalic.ttf in Resources */,
+				95312C582631DC6200B453F8 /* Roboto-MediumItalic.ttf in Resources */,
+				95312C392631BB9000B453F8 /* Assets.xcassets in Resources */,
+				95312C532631DC6200B453F8 /* LICENSE.txt in Resources */,
+				95312C372631BB8C00B453F8 /* Main.storyboard in Resources */,
+				95312C5B2631DC6200B453F8 /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95312C282631BB8C00B453F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */,
+				95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */,
+				95312C322631BB8C00B453F8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95312C352631BB8C00B453F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95312C362631BB8C00B453F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95312C3B2631BB9000B453F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95312C3E2631BB9000B453F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95312C3F2631BB9000B453F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95312C412631BB9000B453F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744VW4YN96;
+				INFOPLIST_FILE = Pakunki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kk.Pakunki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95312C422631BB9000B453F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744VW4YN96;
+				INFOPLIST_FILE = Pakunki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kk.Pakunki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95312C272631BB8C00B453F8 /* Build configuration list for PBXProject "Pakunki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95312C3E2631BB9000B453F8 /* Debug */,
+				95312C3F2631BB9000B453F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95312C402631BB9000B453F8 /* Build configuration list for PBXNativeTarget "Pakunki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95312C412631BB9000B453F8 /* Debug */,
+				95312C422631BB9000B453F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95312C242631BB8C00B453F8 /* Project object */;
+}
