@@ -74,5 +74,12 @@ class LoginViewController: UIViewController {
         privacyPolicyTV.isHidden = true
         checkBtn.isHidden = true
     }
+    @IBAction func loginBtnAction(_ sender: UIButton) {
+        let storyboard = self.storyboard!
+        let vc = storyboard.instantiateViewController(identifier: "CodeController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 

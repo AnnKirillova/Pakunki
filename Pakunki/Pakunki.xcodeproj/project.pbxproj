@@ -26,6 +26,8 @@
 		95312C5D2631DC6200B453F8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C502631DC6200B453F8 /* Roboto-Medium.ttf */; };
 		95312C5E2631DC6200B453F8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95312C512631DC6200B453F8 /* Roboto-Regular.ttf */; };
 		95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C612631E6F600B453F8 /* LoginViewController.swift */; };
+		954012742632B03F002FDD8A /* CodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954012732632B03F002FDD8A /* CodeController.swift */; };
+		954012772632B916002FDD8A /* PackagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954012762632B916002FDD8A /* PackagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		95312C502631DC6200B453F8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		95312C512631DC6200B453F8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		95312C612631E6F600B453F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		954012732632B03F002FDD8A /* CodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeController.swift; sourceTree = "<group>"; };
+		954012762632B916002FDD8A /* PackagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				95312C2F2631BB8C00B453F8 /* AppDelegate.swift */,
 				95312C312631BB8C00B453F8 /* SceneDelegate.swift */,
 				95312C352631BB8C00B453F8 /* Main.storyboard */,
+				954012762632B916002FDD8A /* PackagesController.swift */,
+				954012732632B03F002FDD8A /* CodeController.swift */,
 				95312C612631E6F600B453F8 /* LoginViewController.swift */,
 				95312C382631BB9000B453F8 /* Assets.xcassets */,
 				95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */,
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954012772632B916002FDD8A /* PackagesController.swift in Sources */,
 				95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */,
 				95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */,
+				954012742632B03F002FDD8A /* CodeController.swift in Sources */,
 				95312C322631BB8C00B453F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
