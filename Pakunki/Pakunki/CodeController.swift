@@ -19,4 +19,11 @@ class CodeController: UIViewController {
     func prepareView(){
         nextBtn.layer.cornerRadius = 13
     }
+    @IBAction func nextBtn(_ sender: UIButton) {
+        let storyboard = self.storyboard!
+        let vc = storyboard.instantiateViewController(identifier: "PackagesController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

@@ -209,6 +209,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextBtn:" destination="7MC-3n-eF4" eventType="touchUpInside" id="PIH-ZF-JgD"/>
+                                    <action selector="nextBtn:" destination="hCi-we-nS1" eventType="touchUpInside" id="aq1-d7-OMT"/>
                                     <action selector="nextBtnAction:" destination="7MC-3n-eF4" eventType="touchUpInside" id="GUj-kK-4HC"/>
                                 </connections>
                             </button>
@@ -282,6 +284,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="plusAction:" destination="YEp-FO-7aS" eventType="touchUpInside" id="V2j-Ek-eth"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rYN-oy-YvZ">
                                 <rect key="frame" x="20" y="108" width="374" height="40"/>
@@ -314,10 +319,93 @@
             </objects>
             <point key="canvasLocation" x="2278" y="94"/>
         </scene>
+        <!--Order Controller-->
+        <scene sceneID="1mZ-du-ZZy">
+            <objects>
+                <viewController storyboardIdentifier="OrderController" id="d2e-vg-QGO" customClass="OrderController" customModule="Pakunki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uYo-5E-VwG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slh-ng-5Ii">
+                                <rect key="frame" x="64" y="50" width="94" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kb5-Aq-W3J">
+                                <rect key="frame" x="30" y="52" width="16" height="22"/>
+                                <state key="normal" image="lessthan" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping address for your order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klh-ft-4vo">
+                                <rect key="frame" x="51" y="111" width="223" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShipingAddress" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-1E-0Zg">
+                                <rect key="frame" x="25" y="108" width="14" height="22"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdC-Qk-5L2">
+                                <rect key="frame" x="20" y="148" width="374" height="59"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="0.32000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.019607843140000001" green="0.5450980392" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="tIW-Im-VoM"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84G-JP-hXV">
+                                <rect key="frame" x="29" y="223" width="57" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqz-is-l8I">
+                                <rect key="frame" x="320.66666666666669" y="223" width="56.333333333333314" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tUy-YR-Aba"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Klh-ft-4vo" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="51" id="141-Kg-YQZ"/>
+                            <constraint firstItem="Kb5-Aq-W3J" firstAttribute="top" secondItem="tUy-YR-Aba" secondAttribute="top" constant="52" id="25j-iK-yai"/>
+                            <constraint firstItem="Kb5-Aq-W3J" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="30" id="4A1-VL-1Wy"/>
+                            <constraint firstItem="84G-JP-hXV" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="29" id="6Sz-ei-tsz"/>
+                            <constraint firstItem="1Ia-1E-0Zg" firstAttribute="top" secondItem="Kb5-Aq-W3J" secondAttribute="bottom" constant="34" id="7AK-Rr-mwP"/>
+                            <constraint firstItem="Slh-ng-5Ii" firstAttribute="top" secondItem="tUy-YR-Aba" secondAttribute="top" constant="50" id="C0z-RS-W0U"/>
+                            <constraint firstItem="84G-JP-hXV" firstAttribute="top" secondItem="LdC-Qk-5L2" secondAttribute="bottom" constant="16" id="Emv-Kb-ooO"/>
+                            <constraint firstItem="tUy-YR-Aba" firstAttribute="trailing" secondItem="Yqz-is-l8I" secondAttribute="trailing" constant="37" id="Enw-ta-EeQ"/>
+                            <constraint firstItem="1Ia-1E-0Zg" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="25" id="J9T-pY-phV"/>
+                            <constraint firstItem="Slh-ng-5Ii" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="64" id="ZJp-1I-OCc"/>
+                            <constraint firstItem="LdC-Qk-5L2" firstAttribute="top" secondItem="Klh-ft-4vo" secondAttribute="bottom" constant="18" id="cOR-pR-NRM"/>
+                            <constraint firstItem="tUy-YR-Aba" firstAttribute="trailing" secondItem="LdC-Qk-5L2" secondAttribute="trailing" constant="20" id="qwG-ff-p5S"/>
+                            <constraint firstItem="Klh-ft-4vo" firstAttribute="top" secondItem="Slh-ng-5Ii" secondAttribute="bottom" constant="35" id="tQn-qC-nQU"/>
+                            <constraint firstItem="LdC-Qk-5L2" firstAttribute="leading" secondItem="tUy-YR-Aba" secondAttribute="leading" constant="20" id="tbH-Yy-1jd"/>
+                            <constraint firstItem="Yqz-is-l8I" firstAttribute="top" secondItem="LdC-Qk-5L2" secondAttribute="bottom" constant="16" id="xnH-dj-sMb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editArea" destination="LdC-Qk-5L2" id="I86-nr-X1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8B-ia-IA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028.985507246377" y="93.750000000000014"/>
+        </scene>
     </scenes>
     <resources>
         <image name="PetHand" width="79.333335876464844" height="79.333335876464844"/>
+        <image name="ShipingAddress" width="14" height="22"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="lessthan" catalog="system" width="128" height="111"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
