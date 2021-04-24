@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		178810138D5825F4A62DE290 /* Pods_Pakunki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C849A7769B3BF028BD8B942C /* Pods_Pakunki.framework */; };
 		95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C2F2631BB8C00B453F8 /* AppDelegate.swift */; };
 		95312C322631BB8C00B453F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95312C312631BB8C00B453F8 /* SceneDelegate.swift */; };
 		95312C372631BB8C00B453F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95312C352631BB8C00B453F8 /* Main.storyboard */; };
@@ -29,9 +30,11 @@
 		954012742632B03F002FDD8A /* CodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954012732632B03F002FDD8A /* CodeController.swift */; };
 		954012772632B916002FDD8A /* PackagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954012762632B916002FDD8A /* PackagesController.swift */; };
 		95593A952632FFDC004DD744 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593A942632FFDC004DD744 /* OrderController.swift */; };
+		95593A9F26342D50004DD744 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593A9E26342D50004DD744 /* OrderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63656BC89FF00294C2D05117 /* Pods-Pakunki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pakunki.release.xcconfig"; path = "Target Support Files/Pods-Pakunki/Pods-Pakunki.release.xcconfig"; sourceTree = "<group>"; };
 		95312C2C2631BB8C00B453F8 /* Pakunki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pakunki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95312C2F2631BB8C00B453F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95312C312631BB8C00B453F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,9 @@
 		954012732632B03F002FDD8A /* CodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeController.swift; sourceTree = "<group>"; };
 		954012762632B916002FDD8A /* PackagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesController.swift; sourceTree = "<group>"; };
 		95593A942632FFDC004DD744 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		95593A9E26342D50004DD744 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		A98A6BA61566D26C7ACB470F /* Pods-Pakunki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pakunki.debug.xcconfig"; path = "Target Support Files/Pods-Pakunki/Pods-Pakunki.debug.xcconfig"; sourceTree = "<group>"; };
+		C849A7769B3BF028BD8B942C /* Pods_Pakunki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pakunki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178810138D5825F4A62DE290 /* Pods_Pakunki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30CF1608FD1F2293F56EDD75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6BA61566D26C7ACB470F /* Pods-Pakunki.debug.xcconfig */,
+				63656BC89FF00294C2D05117 /* Pods-Pakunki.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95312C232631BB8C00B453F8 = {
 			isa = PBXGroup;
 			children = (
 				95312C2E2631BB8C00B453F8 /* Pakunki */,
 				95312C2D2631BB8C00B453F8 /* Products */,
+				30CF1608FD1F2293F56EDD75 /* Pods */,
+				A7788C3D990E45D09421AB24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +106,11 @@
 		95312C2E2631BB8C00B453F8 /* Pakunki */ = {
 			isa = PBXGroup;
 			children = (
+				95593A9D26342CF8004DD744 /* ViewControllers */,
 				95312C442631DC3300B453F8 /* Roboto */,
 				95312C2F2631BB8C00B453F8 /* AppDelegate.swift */,
 				95312C312631BB8C00B453F8 /* SceneDelegate.swift */,
 				95312C352631BB8C00B453F8 /* Main.storyboard */,
-				95312C612631E6F600B453F8 /* LoginViewController.swift */,
-				954012732632B03F002FDD8A /* CodeController.swift */,
-				954012762632B916002FDD8A /* PackagesController.swift */,
-				95593A942632FFDC004DD744 /* OrderController.swift */,
 				95312C382631BB9000B453F8 /* Assets.xcassets */,
 				95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */,
 				95312C3D2631BB9000B453F8 /* Info.plist */,
@@ -123,6 +138,26 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
+		95593A9D26342CF8004DD744 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95312C612631E6F600B453F8 /* LoginViewController.swift */,
+				954012732632B03F002FDD8A /* CodeController.swift */,
+				954012762632B916002FDD8A /* PackagesController.swift */,
+				95593A942632FFDC004DD744 /* OrderController.swift */,
+				95593A9E26342D50004DD744 /* OrderCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7788C3D990E45D09421AB24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C849A7769B3BF028BD8B942C /* Pods_Pakunki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95312C402631BB9000B453F8 /* Build configuration list for PBXNativeTarget "Pakunki" */;
 			buildPhases = (
+				8B1520781E3BEFE406D98F76 /* [CP] Check Pods Manifest.lock */,
 				95312C282631BB8C00B453F8 /* Sources */,
 				95312C292631BB8C00B453F8 /* Frameworks */,
 				95312C2A2631BB8C00B453F8 /* Resources */,
+				FF23C7D0B2B5B420B504C925 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +238,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B1520781E3BEFE406D98F76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pakunki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF23C7D0B2B5B420B504C925 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pakunki/Pods-Pakunki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pakunki/Pods-Pakunki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pakunki/Pods-Pakunki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95312C282631BB8C00B453F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,6 +287,7 @@
 			files = (
 				95593A952632FFDC004DD744 /* OrderController.swift in Sources */,
 				954012772632B916002FDD8A /* PackagesController.swift in Sources */,
+				95593A9F26342D50004DD744 /* OrderCell.swift in Sources */,
 				95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */,
 				95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */,
 				954012742632B03F002FDD8A /* CodeController.swift in Sources */,
@@ -355,6 +435,7 @@
 		};
 		95312C412631BB9000B453F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98A6BA61566D26C7ACB470F /* Pods-Pakunki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +455,7 @@
 		};
 		95312C422631BB9000B453F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63656BC89FF00294C2D05117 /* Pods-Pakunki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
