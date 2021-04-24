@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var textArea: UITextField!
@@ -76,8 +77,19 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginBtnAction(_ sender: UIButton) {
         let storyboard = self.storyboard!
-        let vc = storyboard.instantiateViewController(identifier: "CodeController")
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        PhoneAuthProvider.provider().verifyPhoneNumber(textArea.text!, uiDelegate: nil) { (verificationID, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            
+            let vc = storyboard.instantiateViewController(identifier: "CodeController")
+            self.navigationController?.pushViewController(vc, animated: true)
+            // Sign in using the verificationID and the code sent to the user
+            // ...
+        }
     }
     
     

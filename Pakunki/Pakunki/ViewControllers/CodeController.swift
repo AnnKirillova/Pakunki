@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CodeController: UIViewController {
     @IBOutlet weak var codeTextField: UITextField!
@@ -29,9 +30,21 @@ class CodeController: UIViewController {
     }
     
     @IBAction func nextBtn(_ sender: UIButton) {
-        let storyboard = self.storyboard!
-        let vc = storyboard.instantiateViewController(identifier: "PackagesController")
-        self.navigationController?.pushViewController(vc, animated: true)
+        let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: verificationID,
+            verificationCode: codeTextField.text ?? "")
+        Auth.auth().signIn(with: credential) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription)
+                return
+            }
+            
+            print("Happy, happy dog is the happy happy dog :)")
+        }
+//        let storyboard = self.storyboard!
+//        let vc = storyboard.instantiateViewController(identifier: "PackagesController")
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tapOnController(_ sender: UITapGestureRecognizer) {

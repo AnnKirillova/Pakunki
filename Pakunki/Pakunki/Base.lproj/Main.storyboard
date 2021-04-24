@@ -47,26 +47,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-6W-SFV">
-                                <rect key="frame" x="146.66666666666666" y="56" width="120.99999999999997" height="28"/>
+                                <rect key="frame" x="148" y="56" width="118" height="28"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-cP-SwW">
-                                <rect key="frame" x="82.333333333333329" y="150" width="249.33333333333337" height="26"/>
+                                <rect key="frame" x="79.666666666666686" y="150" width="255" height="26"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to speed up the checkout process and save your order to your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-ki-1Gn">
-                                <rect key="frame" x="15" y="194" width="384" height="40"/>
+                                <rect key="frame" x="15" y="194" width="384" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="-1" height="-1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+ 1 (800) 439 0206" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwf-nO-NCF">
-                                <rect key="frame" x="15" y="278" width="384" height="44"/>
+                                <rect key="frame" x="15" y="277.66666666666669" width="384" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="CTr-eO-fx7"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qad-nj-FC7">
-                                <rect key="frame" x="15" y="340" width="384" height="50"/>
+                                <rect key="frame" x="15" y="339.66666666666669" width="384" height="50"/>
                                 <color key="backgroundColor" red="0.019607843137254902" green="0.54509803921568623" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4WX-He-vaW"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-i3-5bC">
-                                <rect key="frame" x="20" y="412" width="19.666666666666671" height="22"/>
+                                <rect key="frame" x="20" y="411.66666666666669" width="19.666666666666671" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="cMx-Ar-b8E"/>
                                     <constraint firstAttribute="width" constant="19.5" id="f08-bx-zgC"/>
@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-hD-vdY">
-                                <rect key="frame" x="50.666666666666657" y="402" width="348.33333333333337" height="450"/>
+                                <rect key="frame" x="50.666666666666657" y="401.66666666666674" width="348.33333333333337" height="450.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="By clicking the “Verify Number” button, I accept the terms of the User Agreement and the Privacy Policy">
