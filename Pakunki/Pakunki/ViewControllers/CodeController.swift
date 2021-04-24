@@ -34,5 +34,8 @@ class CodeController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func tapOnController(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
 }
