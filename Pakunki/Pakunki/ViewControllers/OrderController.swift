@@ -7,19 +7,44 @@
 
 import UIKit
 
-class OrderController: UIViewController{
-    
-    
-    @IBOutlet weak var editTextField: UITextField!
+class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = false
         super.viewDidLoad()
-        editTextField.layer.borderWidth = 3
-        editTextField.layer.borderColor = UIColor.init(red: 0.02, green: 0.54, blue: 0.93, alpha: 1.0).cgColor
-        editTextField.layer.cornerRadius = 13
-        
     }
-    @IBAction func backAction(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ShippingOrderCell") as! ShippingOrderCell
+            return cell
+        }else if indexPath.row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TwoAreasCell") as! TwoAreasCell
+            return cell
+        }else if indexPath.row == 2{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OneAreaCell") as! OneAreaCell
+            return cell
+        }else if indexPath.row == 3{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OneAreaCell") as! OneAreaCell
+            cell.thirdLBL.text = "Address1:"
+            return cell
+        }else if indexPath.row == 4{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OneAreaCell") as! OneAreaCell
+            cell.thirdLBL.text = "Address2:"
+            return cell
+        }else if indexPath.row == 5{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OneAreaCell") as! OneAreaCell
+            cell.thirdLBL.text = "City:"
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TwoAreasCell") as! TwoAreasCell
+            cell.firstLBL.text = "Zip code:"
+            cell.secondLBL.text = "Sate:"
+            return cell
+        }
+}
 }

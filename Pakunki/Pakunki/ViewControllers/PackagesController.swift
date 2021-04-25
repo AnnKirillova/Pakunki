@@ -12,6 +12,7 @@ class PackagesController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         prepareView()
     }
     
