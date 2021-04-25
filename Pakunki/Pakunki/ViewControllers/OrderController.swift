@@ -9,9 +9,12 @@ import UIKit
 
 class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var deleteBTN: UIButton!
     override func viewDidLoad() {
         self.navigationController?.navigationBar.isHidden = false
         super.viewDidLoad()
+        deleteBTN.layer.cornerRadius = 13
+        self.title = "Edit order"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,4 +50,5 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
             return cell
         }
 }
+    
 }

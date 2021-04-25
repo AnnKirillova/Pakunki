@@ -737,17 +737,33 @@
                                     <outlet property="delegate" destination="1MP-WE-i6p" id="9lC-nq-bgB"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-Sb-HBI">
+                                <rect key="frame" x="21" y="420" width="278" height="50"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gls-9H-k7V"/>
+                                </constraints>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FMX-LT-wJH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="V8z-l3-gzp" firstAttribute="top" secondItem="s61-cv-yqb" secondAttribute="top" id="24f-Gv-Fnf"/>
+                            <constraint firstItem="FMX-LT-wJH" firstAttribute="bottom" secondItem="jPV-Sb-HBI" secondAttribute="bottom" constant="49" id="2Jy-yl-pfM"/>
                             <constraint firstItem="V8z-l3-gzp" firstAttribute="leading" secondItem="FMX-LT-wJH" secondAttribute="leading" id="2Kw-vo-svc"/>
+                            <constraint firstItem="jPV-Sb-HBI" firstAttribute="leading" secondItem="FMX-LT-wJH" secondAttribute="leading" constant="21" id="EpC-th-gtk"/>
                             <constraint firstAttribute="bottom" secondItem="V8z-l3-gzp" secondAttribute="bottom" id="JsQ-9W-bfU"/>
+                            <constraint firstItem="FMX-LT-wJH" firstAttribute="trailing" secondItem="jPV-Sb-HBI" secondAttribute="trailing" constant="21" id="VP8-2m-9HQ"/>
                             <constraint firstItem="V8z-l3-gzp" firstAttribute="trailing" secondItem="FMX-LT-wJH" secondAttribute="trailing" id="nwH-We-jD9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wjq-vH-BcM"/>
+                    <connections>
+                        <outlet property="deleteBTN" destination="jPV-Sb-HBI" id="X3k-ee-Hf4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kr5-Hv-tTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
