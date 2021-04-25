@@ -8,7 +8,9 @@
 import UIKit
 
 class TwoAreasCell: UITableViewCell {
-
+    @IBOutlet weak var firstArea: UITextField!
+    @IBOutlet weak var secondArea: UITextField!
+    
     @IBOutlet weak var firstLBL: UILabel!
     @IBOutlet weak var secondLBL: UILabel!
     

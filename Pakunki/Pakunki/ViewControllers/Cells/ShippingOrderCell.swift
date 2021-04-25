@@ -9,6 +9,7 @@ import UIKit
 
 class ShippingOrderCell: UITableViewCell {
     @IBOutlet weak var shippoingOrderTF: UITextField!
+    @IBOutlet weak var id: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -35,6 +35,7 @@
 		95A679F826356B0A00BD5071 /* ShippingOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A679F726356B0A00BD5071 /* ShippingOrderCell.swift */; };
 		95A679FB26356B5B00BD5071 /* TwoAreasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A679FA26356B5B00BD5071 /* TwoAreasCell.swift */; };
 		95A679FE26356B6D00BD5071 /* OneAreaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A679FD26356B6D00BD5071 /* OneAreaCell.swift */; };
+		95C26E0F2635A8790090AD15 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C26E0E2635A8790090AD15 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		95A679F726356B0A00BD5071 /* ShippingOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingOrderCell.swift; sourceTree = "<group>"; };
 		95A679FA26356B5B00BD5071 /* TwoAreasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoAreasCell.swift; sourceTree = "<group>"; };
 		95A679FD26356B6D00BD5071 /* OneAreaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAreaCell.swift; sourceTree = "<group>"; };
+		95C26E0E2635A8790090AD15 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A98A6BA61566D26C7ACB470F /* Pods-Pakunki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pakunki.debug.xcconfig"; path = "Target Support Files/Pods-Pakunki/Pods-Pakunki.debug.xcconfig"; sourceTree = "<group>"; };
 		C849A7769B3BF028BD8B942C /* Pods_Pakunki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pakunki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				95312C3A2631BB9000B453F8 /* LaunchScreen.storyboard */,
 				95312C3D2631BB9000B453F8 /* Info.plist */,
 				9554485326345E29008813E5 /* GoogleService-Info.plist */,
+				95C26E0E2635A8790090AD15 /* Order.swift */,
 			);
 			path = Pakunki;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				95593A952632FFDC004DD744 /* OrderController.swift in Sources */,
 				954012772632B916002FDD8A /* PackagesController.swift in Sources */,
 				95593A9F26342D50004DD744 /* OrderCell.swift in Sources */,
+				95C26E0F2635A8790090AD15 /* Order.swift in Sources */,
 				95312C622631E6F600B453F8 /* LoginViewController.swift in Sources */,
 				95312C302631BB8C00B453F8 /* AppDelegate.swift in Sources */,
 				95A679FB26356B5B00BD5071 /* TwoAreasCell.swift in Sources */,

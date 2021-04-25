@@ -9,6 +9,7 @@ import UIKit
 
 class OneAreaCell: UITableViewCell {
 
+    @IBOutlet weak var textArea: UITextField!
     @IBOutlet weak var thirdLBL: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3b-8A-3B8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mju-w2-dZj">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -317,7 +317,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Fw2-5a-ubS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U3b-8A-3B8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OrderNavigation" automaticallyAdjustsScrollViewInsets="NO" id="U3b-8A-3B8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TT3-Nk-oge">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -366,7 +366,7 @@
                                 <rect key="frame" x="0.0" y="163" width="320" height="356"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="186" id="VP8-9F-X7g" customClass="OrderCell" customModule="Pakunki" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="186" id="VP8-9F-X7g" customClass="OrderCell" customModule="Pakunki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="186"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VP8-9F-X7g" id="2WJ-Ko-eGm">
@@ -463,9 +463,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="city" destination="acd-4Y-QCy" id="2PI-Nj-YQ5"/>
                                             <outlet property="deliveredRound" destination="oUV-Im-VAe" id="596-71-yMd"/>
+                                            <outlet property="id" destination="3qv-fY-9l0" id="lUO-7Y-2Lr"/>
                                             <outlet property="orderView" destination="1Fn-Zb-gEn" id="BpF-Cq-g16"/>
-                                            <segue destination="1MP-WE-i6p" kind="show" id="QSt-aa-y9i"/>
+                                            <outlet property="street" destination="yq4-4Y-qtq" id="0yF-vE-mwo"/>
+                                            <outlet property="telephone" destination="bUd-CK-65D" id="VF4-Fh-Bew"/>
+                                            <outlet property="userName" destination="4Kz-Mz-xcE" id="Su1-LN-pRy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -490,6 +494,9 @@
                                             <constraint firstAttribute="width" constant="26" id="vKt-2m-xl8"/>
                                         </constraints>
                                         <state key="normal" image="PlusImage"/>
+                                        <connections>
+                                            <action selector="addBtnAction:" destination="W7x-sf-OMz" eventType="touchUpInside" id="HCL-qI-YF5"/>
+                                        </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Oo1-O9-zIW">
                                         <rect key="frame" x="20" y="108" width="280" height="40"/>
@@ -533,6 +540,7 @@
                     <tabBarItem key="tabBarItem" title="My packages" image="MyOrders" id="wlt-SQ-dTR"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="ordersTableiew" destination="9uT-Qg-7zP" id="98f-M1-ZSL"/>
                         <outlet property="topViewController" destination="QPJ-wH-HyV" id="7OH-aH-Q4g"/>
                     </connections>
                 </viewController>
@@ -553,7 +561,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemGray2Color"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShippingOrderCell" id="13N-Y4-BPE" customClass="ShippingOrderCell" customModule="Pakunki" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShippingOrderCell" id="13N-Y4-BPE" customClass="ShippingOrderCell" customModule="Pakunki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="138.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="13N-Y4-BPE" id="wzb-Ls-Sji">
@@ -601,10 +609,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="shippoingOrderTF" destination="Ddj-8x-Hzn" id="lnI-Bj-Fu7"/>
+                                            <outlet property="id" destination="Ddj-8x-Hzn" id="7KY-X4-pbZ"/>
+                                            <outlet property="shippoingOrderTF" destination="Ddj-8x-Hzn" id="G4B-tT-z9e"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwoAreasCell" id="x69-oh-QQA" customClass="TwoAreasCell" customModule="Pakunki" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TwoAreasCell" id="x69-oh-QQA" customClass="TwoAreasCell" customModule="Pakunki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="166.5" width="320" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x69-oh-QQA" id="gvl-fs-tir">
@@ -620,7 +629,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaaaa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-hi-19e">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-hi-19e">
                                                     <rect key="frame" x="30" y="27.5" width="123.5" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="aQH-V9-I6i"/>
@@ -637,7 +646,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaaaaaa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iq6-5j-qOz">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iq6-5j-qOz">
                                                     <rect key="frame" x="172.5" y="27" width="123.5" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="4Mv-TX-JZV"/>
@@ -683,11 +692,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="firstArea" destination="fbs-hi-19e" id="eVC-Am-VFn"/>
                                             <outlet property="firstLBL" destination="T20-VS-wcm" id="ZMj-W0-wPA"/>
+                                            <outlet property="secondArea" destination="iq6-5j-qOz" id="PQP-vy-w8r"/>
                                             <outlet property="secondLBL" destination="taS-HW-40u" id="kum-ks-3Hp"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OneAreaCell" rowHeight="66" id="Mb1-yc-luu" customClass="OneAreaCell" customModule="Pakunki" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OneAreaCell" rowHeight="66" id="Mb1-yc-luu" customClass="OneAreaCell" customModule="Pakunki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="218.5" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mb1-yc-luu" id="cA6-2c-QPs">
@@ -700,8 +711,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+1 (406) 555-0120" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJE-GM-rnO">
-                                                    <rect key="frame" x="32" y="40" width="115" height="16"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJE-GM-rnO">
+                                                    <rect key="frame" x="32" y="40" width="4" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="cDV-zM-zS8"/>
                                                     </constraints>
@@ -728,6 +739,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="textArea" destination="AJE-GM-rnO" id="Lfj-gK-avg"/>
                                             <outlet property="thirdLBL" destination="cJg-wf-6NZ" id="4W7-kg-Ocb"/>
                                         </connections>
                                     </tableViewCell>
@@ -738,7 +750,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-Sb-HBI">
-                                <rect key="frame" x="21" y="420" width="278" height="50"/>
+                                <rect key="frame" x="21" y="469" width="278" height="50"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Gls-9H-k7V"/>
@@ -746,6 +758,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteAction:" destination="1MP-WE-i6p" eventType="touchUpInside" id="uZN-sC-KnO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FMX-LT-wJH"/>

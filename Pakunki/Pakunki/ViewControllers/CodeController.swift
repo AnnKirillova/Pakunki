@@ -24,7 +24,7 @@ class CodeController: UIViewController {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         
-        codeTextField.defaultTextAttributes.updateValue( 50, forKey: .kern)
+        codeTextField.defaultTextAttributes.updateValue( 20, forKey: .kern)
         codeTextField.defaultTextAttributes.updateValue( font, forKey: .font)
         codeTextField.defaultTextAttributes.updateValue( style, forKey: .paragraphStyle)
     }
@@ -40,7 +40,9 @@ class CodeController: UIViewController {
                 return
             }
             
-            print("Happy, happy dog is the happy happy dog :)")
+            let vc = self.storyboard!.instantiateViewController(identifier: "OrderNavigation")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
 //        let storyboard = self.storyboard!
 //        let vc = storyboard.instantiateViewController(identifier: "PackagesController")

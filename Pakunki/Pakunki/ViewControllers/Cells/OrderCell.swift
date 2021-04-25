@@ -11,6 +11,13 @@ class OrderCell: UITableViewCell {
 
     @IBOutlet weak var orderView: UIView!
     @IBOutlet weak var deliveredRound: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var street: UILabel!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var telephone: UILabel!
+    @IBOutlet weak var id: UILabel!
+    
+//    var someNumber: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
