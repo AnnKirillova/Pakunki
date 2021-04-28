@@ -18,15 +18,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
-        
-        // Do any additional setup after loading the view.
     }
     
     func prepareView(){
         loginBtn.layer.cornerRadius = 13
         textArea.addTarget(nil, action: #selector(textFieldDidChange), for: .editingChanged)
-//        https://i.pinimg.com/originals/d3/99/c1/d399c108c4e8b64dd9521d750eec4f8f.jpg
-//        https://i.pinimg.com/originals/96/19/38/9619385799a412f779824fad47bbe45f.jpg
         
         let urlPolicy = URL(string: "https://i.pinimg.com/originals/d3/99/c1/d399c108c4e8b64dd9521d750eec4f8f.jpg")!
         let urlAgreement = URL(string: "https://i.pinimg.com/originals/96/19/38/9619385799a412f779824fad47bbe45f.jpg")!
@@ -87,8 +83,6 @@ class LoginViewController: UIViewController {
             
             let vc = storyboard.instantiateViewController(identifier: "CodeController")
             self.navigationController?.pushViewController(vc, animated: true)
-            // Sign in using the verificationID and the code sent to the user
-            // ...
         }
     }
     

@@ -17,7 +17,6 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var telephone: UILabel!
     @IBOutlet weak var id: UILabel!
     
-//    var someNumber: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
