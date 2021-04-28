@@ -15,6 +15,10 @@ protocol OrderDelegate: class{
 
 class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var addChanges: UIButton!
+    
+    
+    
     @IBOutlet weak var deleteBTN: UIButton!
     var type: OrderType = .edit
     var order: Order?
@@ -27,7 +31,9 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
     var addres2Cell: OneAreaCell!
     var cityCell: OneAreaCell!
     var zipCell: TwoAreasCell!
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
         super.viewDidLoad()
         deleteBTN.layer.cornerRadius = 13
@@ -41,7 +47,11 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
             deleteBTN.setTitle("Delete", for: .normal)
             deleteBTN.backgroundColor = UIColor(red: 0.92, green: 0.34, blue: 0.34, alpha: 1)
         }
-        
+        if type == .edit{
+            addChanges.isHidden = false
+        }else{
+            addChanges.isHidden = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -111,9 +121,11 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     @IBAction func deleteAction(_ sender: UIButton) {
         if type == .edit{
+            
             delegate?.deleteOrder(with: order!.id)
             navigationController?.popViewController(animated: true)
         } else {
+            
             let newOrder = Order(id: idCell.id.text!,
                                  firstName: nameCell.firstArea.text!,
                                secondName: nameCell.secondArea.text!,
@@ -129,6 +141,7 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
     }
     @IBAction func addChangesAction(_ sender: UIButton) {
+        
         let newOrder = Order(id: idCell.id.text!,
                              firstName: nameCell.firstArea.text!,
                            secondName: nameCell.secondArea.text!,
@@ -139,9 +152,8 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
                            zipCode: zipCell.firstArea.text!,
                            sate: zipCell.secondArea.text!,
                            isActive: true)
-        
-        delegate?.addOrder(order: newOrder)
         delegate?.deleteOrder(with: order!.id)
+        delegate?.addOrder(order: newOrder)
         navigationController?.popViewController(animated: true)
     }
 }
