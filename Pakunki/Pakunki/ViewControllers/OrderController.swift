@@ -10,6 +10,7 @@ import UIKit
 protocol OrderDelegate: class{
     func deleteOrder(with id: String)
     func addOrder(order: Order)
+    func addChange(order: Order)
 }
 
 class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSource{
@@ -105,6 +106,8 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
             }
             return cell
         }
+    
+    
     }
     @IBAction func deleteAction(_ sender: UIButton) {
         if type == .edit{
@@ -124,6 +127,22 @@ class OrderController: UIViewController, UITableViewDelegate, UITableViewDataSou
             delegate?.addOrder(order: newOrder)
             navigationController?.popViewController(animated: true)
         }
+    }
+    @IBAction func addChangesAction(_ sender: UIButton) {
+        let newOrder = Order(id: idCell.id.text!,
+                             firstName: nameCell.firstArea.text!,
+                           secondName: nameCell.secondArea.text!,
+                           phoneNumber:phoneCell.textArea.text!,
+                           adress1: addres1Cell.textArea.text!,
+                           adress2: addres2Cell.textArea.text!,
+                           city: cityCell.textArea.text!,
+                           zipCode: zipCell.firstArea.text!,
+                           sate: zipCell.secondArea.text!,
+                           isActive: true)
+        
+        delegate?.addOrder(order: newOrder)
+        delegate?.deleteOrder(with: order!.id)
+        navigationController?.popViewController(animated: true)
     }
 }
 

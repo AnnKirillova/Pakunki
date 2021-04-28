@@ -8,6 +8,8 @@
 import UIKit
 
 class PackagesController: UIViewController, UITableViewDelegate, UITableViewDataSource, OrderDelegate {
+    
+    
     @IBOutlet weak var topViewController: UIView!
     @IBOutlet weak var ordersTableiew: UITableView!
     
@@ -78,8 +80,11 @@ class PackagesController: UIViewController, UITableViewDelegate, UITableViewData
         }
         ordersTableiew.reloadData()
     }
-    
     func addOrder(order: Order) {
+        orders.append(order)
+        ordersTableiew.reloadData()
+    }
+    func addChange(order: Order) {
         orders.append(order)
         ordersTableiew.reloadData()
     }

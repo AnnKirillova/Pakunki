@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mju-w2-dZj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3b-8A-3B8">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -47,13 +47,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-6W-SFV">
-                                <rect key="frame" x="128.5" y="56" width="118" height="28"/>
+                                <rect key="frame" x="127" y="56" width="121" height="28"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-cP-SwW">
-                                <rect key="frame" x="60" y="150" width="255" height="26"/>
+                                <rect key="frame" x="63" y="150" width="249.5" height="26"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -596,15 +596,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rym-wB-cjL">
+                                                    <rect key="frame" x="288" y="11" width="82" height="30"/>
+                                                    <state key="normal" title="Add change"/>
+                                                    <connections>
+                                                        <action selector="addChangesAction:" destination="1MP-WE-i6p" eventType="touchUpInside" id="nN3-Bu-XwD"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Ddj-8x-Hzn" firstAttribute="leading" secondItem="wzb-Ls-Sji" secondAttribute="leading" constant="20" id="7xj-WF-luz"/>
                                                 <constraint firstItem="Vzr-uI-CtV" firstAttribute="leading" secondItem="wzb-Ls-Sji" secondAttribute="leading" constant="25" id="8es-bN-jkg"/>
                                                 <constraint firstItem="Ddj-8x-Hzn" firstAttribute="top" secondItem="Ieh-XZ-48u" secondAttribute="bottom" constant="18" id="9Y4-d3-Vdq"/>
+                                                <constraint firstItem="Rym-wB-cjL" firstAttribute="top" secondItem="wzb-Ls-Sji" secondAttribute="top" constant="11" id="DDs-52-CCU"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ddj-8x-Hzn" secondAttribute="bottom" constant="8" id="Ip5-kd-6vz"/>
                                                 <constraint firstItem="Ieh-XZ-48u" firstAttribute="leading" secondItem="Vzr-uI-CtV" secondAttribute="trailing" constant="12" id="RxD-cd-hE9"/>
                                                 <constraint firstAttribute="trailing" secondItem="Ddj-8x-Hzn" secondAttribute="trailing" constant="20" id="fbg-Zt-Fzn"/>
                                                 <constraint firstItem="Vzr-uI-CtV" firstAttribute="top" secondItem="wzb-Ls-Sji" secondAttribute="top" constant="33" id="jOb-6T-Dxd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rym-wB-cjL" secondAttribute="trailing" constant="5" id="m5R-a9-bhT"/>
                                                 <constraint firstItem="Ieh-XZ-48u" firstAttribute="centerY" secondItem="Vzr-uI-CtV" secondAttribute="centerY" id="qzT-gd-nJ3"/>
                                             </constraints>
                                         </tableViewCellContentView>

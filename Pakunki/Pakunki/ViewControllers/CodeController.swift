@@ -44,14 +44,14 @@ class CodeController: UIViewController {
                     print(error?.localizedDescription ?? "")
                     return
                 }
+                let vc = self.storyboard!.instantiateViewController(identifier: "OrderNavigation")
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
             }
-            let vc = self.storyboard!.instantiateViewController(identifier: "OrderNavigation")
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
         } else{
             print("Error")
         }
-        }
+    }
     
     
     @IBAction func tapOnController(_ sender: UITapGestureRecognizer) {
